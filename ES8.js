@@ -34,7 +34,8 @@ const urls = [
     'http://swapi.dev/api/people/3',
     'http://swapi.dev/api/people/4'
   ]
-  
+
+
 Promise.all(urls.map(url => 
     fetch(url).then(response => response.json())
     .then(response => console.log(response))

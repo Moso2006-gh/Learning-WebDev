@@ -67,6 +67,7 @@ const promise4 = new Promise((resolve, reject) => {
     setTimeout(resolve, 3000, "Halo") // -> resolve("Halo")
 })
 
+//Solo se resuelve si todas las promesas lo hacen
 Promise.all([promise2, promise3, promise4])
 .then(values => {
     values.map(value =>{
